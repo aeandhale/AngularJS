@@ -9,10 +9,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
+import { MenuComponent } from './menu/menu.component';
+import { MatListModule } from '@angular/material/list'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import 'hammerjs';
     MatSliderModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
