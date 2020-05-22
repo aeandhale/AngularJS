@@ -15,12 +15,14 @@ import { MatButtonModule } from '@angular/material/button';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { MatListModule } from '@angular/material/list'
-import { from } from 'rxjs';
+import { DishdetailComponent } from './dishdetail/dishdetail.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishdetailComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { from } from 'rxjs';
     MatCardModule,
     MatButtonModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
